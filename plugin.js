@@ -8,7 +8,7 @@ PouchDB.plugin(Find)
 PouchDB.plugin(LiveFind)
 Vue.use(VuePouch, {
   pouch: PouchDB,
-  defaultDB: '<%= moduleOptions.defaultDB %=>' || ''
+  defaultDB: '<%= options.defaultDB %=>'
 })
 
 export default (ctx) => {
